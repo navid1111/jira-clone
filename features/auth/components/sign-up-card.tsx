@@ -18,6 +18,7 @@ import {
 } from '@/components/ui/form';
 import { Input } from '@/components/ui/input';
 import { zodResolver } from '@hookform/resolvers/zod';
+import Link from 'next/link';
 import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
 import { SiGithub } from 'react-icons/si';
@@ -121,6 +122,14 @@ const SignUpCard = () => {
           <SiGithub className="mr-2" />
           Sign Up with Github
         </Button>
+      </CardContent>
+      <CardContent className="p-7 text-center">
+        <p className="text-sm">
+          Already have an account?{' '}
+          <Link href="/sign-in" className="text-blue-600 hover:underline">
+            Sign In
+          </Link>
+        </p>
       </CardContent>
     </Card>
   );

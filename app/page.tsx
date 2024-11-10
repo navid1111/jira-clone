@@ -3,7 +3,7 @@ import { Input } from '@/components/ui/input';
 
 export default function Home() {
   return (
-    <div className=" bg-black">
+    <div>
       <Input></Input>
       <div className=" flex gap-4">
         <Button>Primary</Button>
